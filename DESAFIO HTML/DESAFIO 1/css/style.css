@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+:root {
+    --amarelo: #F9A825;
+    --cinza: #212121;
+    --vermelho: #ff0000;
+    --fonte-branca: #ffffff;
+    --bacground-p: #8080801a;
+}
+
+html, body { height: 100% }
+
+body {
+    flex-direction: column;
+}
+
+header {
+    height: 40px;
+    width: 100vw;
+    background: var(--cinza);
+    color: var(--fonte-branca);
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--fonte-branca);
+    transition: 0.5s;
+}
+
+.amarelo {
+    background: var(--amarelo);
+}
+
+.hover:hover {
+    background: var(--vermelho);
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+}
+
+main > section {
+    width: 650px;
+    flex-direction: row;
+}
+
+main > section > article {
+    height: 200px;
+    width: 50%;
+    border-right: 2px dotted black;
+}
+
+main > section > article > p {
+    height: 100px;
+    width: 300px;
+    background-color: var(--bacground-p);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+main > section > form {
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+main > section > form > input {
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+main > section > form > input:first-child {
+    outline: 1px solid black;
+    margin-bottom: 10px;
+    padding-left: 3px;
+}
+
+main > section > form > input:last-child {
+    cursor: pointer;
+}
+
+footer {
+    height: 80px;
+    width: 100vw;
+    background: var(--cinza);
+    color: var(--fonte-branca);
+    font-size: 10px;
+}
